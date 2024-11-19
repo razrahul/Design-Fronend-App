@@ -17,6 +17,10 @@ const ProfileSettings = lazy(() => import('../pages/protected/ProfileSettings'))
 const GettingStarted = lazy(() => import('../pages/GettingStarted'))
 const DocFeatures = lazy(() => import('../pages/DocFeatures'))
 const DocComponents = lazy(() => import('../pages/DocComponents'))
+//section homepage
+const HomePage = lazy(() => import("../pages/protected/section/HomePage.js"))
+const AboutPage = lazy(() => import("../pages/protected/section/AboutPage.js"))
+const ContactPage = lazy(() => import("../pages/protected/section/ContactPage.js"))
 
 
 const routes = [
@@ -28,6 +32,19 @@ const routes = [
     path: '/welcome', // the url
     component: Welcome, // view rendered
   },
+  {
+    path: '/section-homepage',
+    component: HomePage,
+  },
+  {
+    path: '/section-aboutpage',
+    component: AboutPage,
+  },
+  {
+    path: '/section-contactpage',
+    component: ContactPage,
+  },
+ 
   {
     path: '/leads',
     component: Leads,
