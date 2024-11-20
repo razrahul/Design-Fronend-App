@@ -37,6 +37,8 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
           <Route path="/documentation" element={<Documentation />} />
+
+          <Route path="/"  element={<h2 className='text-center text-2xl '>Welcome to Web App </h2>} />
           
           {/* Place new routes over this */}
           <Route path="/app/*" element={<Layout />} />

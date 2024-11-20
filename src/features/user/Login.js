@@ -30,6 +30,7 @@ function Login() {
         password: loginObj.password,
       });
         console.log(response);
+        console.log(response.data);
         
       // Assuming the API returns a token on successful login
       localStorage.setItem("token", response.data.token);
